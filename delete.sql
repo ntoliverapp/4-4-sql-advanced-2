@@ -36,5 +36,12 @@ VALUES
 
 SELECT * FROM animals;
 -- 2. Delete all ***‘lion’*** entries from the table.
+
+SELECT * FROM animals;
+
+DELETE FROM animals
+WHERE id=1;
+
+SELECT * FROM animals;
 -- 3. Delete all animals whose names start with “M”.
 -- 4. Delete all entries whose age is less than 9.
