@@ -1,5 +1,24 @@
 -- ****Intermediate - Alter Table****
 -- 1. Copy, paste, and run the insert statement from the animal section in delete.sql. 
+CREATE TABLE animals(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50),
+    type TEXT, 
+    age INTEGER
+);
+
+INSERT INTO animals 
+(name, type, age )
+VALUES 
+('Leo', 'lion', 12), 
+('Jerry', 'mouse', 4), 
+('Marty', 'zebra', 10), 
+('Gloria', 'hippo', 8), 
+('Alex', 'lion', 9), 
+('Melman', 'giraffe', 15), 
+('Nala', 'lion', 2), 
+('Marie', 'cat', 1),
+('Flounder', 'fish', 8);
 
 -- 2. Add a column to the animals table called “location”. It should have a VARCHAR data type.
 -- 3. Insert 3 new animals into the table – make sure none of their fields are null.
