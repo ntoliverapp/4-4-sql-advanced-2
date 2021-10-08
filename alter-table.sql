@@ -26,6 +26,14 @@ ADD location VARCHAR(50);
 
 SELECT * FROM animals;
 -- 3. Insert 3 new animals into the table – make sure none of their fields are null.
+INSERT INTO animals 
+(name, type, age, location)
+VALUES 
+('Garfield', 'cat', 6, 'by the Fridge'), 
+('Scooby Doo', 'dog', 8, 'Mystery Machine'), 
+('Stuart Little', 'mouse', 5,'Littles Home');
+
+SELECT * FROM animals;
 -- 4. Change the “type” column’s name to be “species”.
 -- 5. Change the “species” column data type to be VARCHAR.
 
