@@ -7,9 +7,13 @@ JOIN invoice_line ON invoice_line.invoice_id = invoice.invoice_id;
 SELECT * FROM invoice
 WHERE invoice_id IN (
 SELECT invoice_id FROM invoice_line 
-WHERE unit_price > 0.99);
+WHERE unit_price > 0.99
+);
 
 -- 2. Get all playlist tracks where the playlist name is Music.
+SELECT * FROM playlist_track
+JOIN playlist ON playlist.playlist_id = playlist_track.playlist_id;
+
 SELECT * FROM playlist_track
 WHERE playlist_id IN (
 SELECT playlist_id FROM playlist
