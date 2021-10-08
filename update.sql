@@ -42,13 +42,14 @@ SELECT * FROM customer
 WHERE email = 'luisrojas@yahoo.cl';
 -- 5. Find all tracks that are the genre Metal and have no composer. Set the composer to “The darkness around us”.
 SELECT * FROM track
-WHERE composer IS NULL
-LIMIT 5;
+WHERE composer IS NULL AND genre_id IN(
+SELECT genre_id FROM genre 
+WHERE name = 'Metal');
 
 UPDATE track
 SET composer = 'The darkness around us'
 ;
 
 SELECT * FROM track
-LIMIT 5;
+LIMIT 10;
 -- 6. Refresh your page to remove all database changes.
