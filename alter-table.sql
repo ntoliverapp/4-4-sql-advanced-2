@@ -35,6 +35,13 @@ VALUES
 
 SELECT * FROM animals;
 -- 4. Change the “type” column’s name to be “species”.
+SELECT * FROM animals;
+
+ALTER TABLE animals
+
+RENAME COLUMN type TO species;
+
+SELECT * FROM animals;
 -- 5. Change the “species” column data type to be VARCHAR.
 
 -- ****Intermediate - Group By****
