@@ -21,6 +21,10 @@ VALUES
 ('Flounder', 'fish', 8);
 
 -- 2. Add a column to the animals table called “location”. It should have a VARCHAR data type.
+ALTER TABLE animals
+ADD location VARCHAR(50);
+
+SELECT * FROM animals;
 -- 3. Insert 3 new animals into the table – make sure none of their fields are null.
 -- 4. Change the “type” column’s name to be “species”.
 -- 5. Change the “species” column data type to be VARCHAR.
