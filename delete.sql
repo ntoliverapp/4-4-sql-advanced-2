@@ -51,3 +51,12 @@ WHERE name LIKE 'M%';
 
 SELECT * FROM animals;
 -- 4. Delete all entries whose age is less than 9.
+SELECT * FROM animals;
+
+SELECT * FROM animals
+WHERE age < 9;
+
+DELETE FROM animals
+WHERE age < 9;
+
+SELECT * FROM animals;
