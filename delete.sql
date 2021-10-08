@@ -40,7 +40,7 @@ SELECT * FROM animals;
 SELECT * FROM animals;
 
 DELETE FROM animals
-WHERE id=1;
+WHERE type = 'lion';
 
 SELECT * FROM animals;
 -- 3. Delete all animals whose names start with “M”.
@@ -52,9 +52,6 @@ WHERE name LIKE 'M%';
 SELECT * FROM animals;
 -- 4. Delete all entries whose age is less than 9.
 SELECT * FROM animals;
-
-SELECT * FROM animals
-WHERE age < 9;
 
 DELETE FROM animals
 WHERE age < 9;
