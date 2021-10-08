@@ -44,4 +44,10 @@ WHERE id=1;
 
 SELECT * FROM animals;
 -- 3. Delete all animals whose names start with “M”.
+SELECT * FROM animals;
+
+DELETE FROM animals
+WHERE name LIKE 'M%';
+
+SELECT * FROM animals;
 -- 4. Delete all entries whose age is less than 9.
